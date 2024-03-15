@@ -1,0 +1,21 @@
+{
+  "name": "sevenseas-captain",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^0.8.0",
+    "elysia": "latest",
+    "igdb-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "latest",
+    "@types/igdb-api-node": "^5.0.3",
+    "bun-types": "latest"
+  },
+  "module": "dist/index.js"
+}

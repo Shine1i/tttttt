@@ -1,7 +1,10 @@
 {
-  "name": "sevenseas-captain",
+  "$schema": "https://json.schemastore.org/package",
+  "name": "elysia-kickstart",
+  "module": "src/index.ts",
   "version": "1.0.50",
   "scripts": {
+
     "dev": "bun --watch src/index.ts",
     "build:vercel": "bun run build && bun scripts/transform-paths.ts",
     "start": "bun run build && bun src/index.ts",
@@ -16,6 +19,5 @@
     "@flydotio/dockerfile": "latest",
     "@types/igdb-api-node": "^5.0.3",
     "bun-types": "latest"
-  },
-  "module": "dist/index.js"
+  }
 }

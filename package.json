@@ -6,8 +6,7 @@
   "scripts": {
 
     "dev": "bun --watch src/index.ts",
-
-    "build": "bun run build && bun scripts/transform-paths.ts",
+    "build": "bun run build",
     "start": "bun run build && bun src/index.ts",
     "test": "bun test"
   },
